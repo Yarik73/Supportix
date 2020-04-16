@@ -4,7 +4,7 @@ $(document).ready(function() {
         loop: true,
         nav: true,
         dots: true,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeout: 4000,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
