@@ -1,0 +1,42 @@
+.footer {
+  padding-bottom: 20px;
+  margin-top: 50px;
+  background-color: $brown;
+  font-size: 14px;
+  line-height: 18px;
+  color: #dddddd;
+}
+
+.footer__wrap {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left {
+  padding-top: 80px;
+}
+
+.footer__right {
+  padding-top: 20px;
+  text-align: end;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #84868b;
+}
+
+.footer__nav-item {
+  display: inline-block;
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__developed span {
+  color: $red;
+}

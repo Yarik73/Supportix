@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        fill: #fff;
+        font-family: OpenSans;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text id="В" class="cls-1" x="-0.988" y="10.032">В</text>
+</svg>

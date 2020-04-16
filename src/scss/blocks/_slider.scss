@@ -1,0 +1,100 @@
+.slider {
+  @include container();
+  height: 505px;
+}
+
+.slider__slide {
+  width: 100%;
+  height: 505px;
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 505px;
+}
+
+.slide__info {
+  padding: 100px 40px 100px 35px;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  height: 100%;
+  color: #e4e1e1;
+  overflow: hidden;
+  z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 131px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1000px rgba(38, 38, 38, 0.8);
+      z-index: -1;
+    }
+}
+
+.slide__title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.slide__description {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 136px;
+  right: 283px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $red;
+  outline: none;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid $white;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+  display: none
+}
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+}
+
+.owl-carousel button.owl-dot {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+}
+
+.owl-carousel button.owl-dot.active {
+  background-color: $red;
+}
